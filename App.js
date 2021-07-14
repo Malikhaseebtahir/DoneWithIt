@@ -1,6 +1,6 @@
 import React from 'react';
-import ViewImageScreen from './app/Screens/ViewImageScreen';
+import Practive from './app/Screens/practive';
 
 export default function App() {
-  return <ViewImageScreen/>
+  return <Practive/>
 }
