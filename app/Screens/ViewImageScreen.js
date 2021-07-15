@@ -1,13 +1,18 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import colors from '../config/color';
 
 function ViewImageScreen(props) {
     return (
         <View style={styles.container}>
-            <View style={styles.leftButton}/>
-            <View style={styles.rightButton}/>
+            <View style={styles.leftButton}>
+                <MaterialCommunityIcons name='close' size={35} color='white'/>
+            </View>
+            <View style={styles.rightButton}>
+                <MaterialCommunityIcons name='trash-can-outline' size={35} color='white'/>
+            </View>
 
             <Image resizeMode="contain" style={styles.image} source={require('../assets/chair.jpg')}/>
 
@@ -27,21 +32,15 @@ const styles = StyleSheet.create({
     },
 
     leftButton: {
-        backgroundColor: colors.primary,
         position: 'absolute',
         top: 50,
         left: 30,
-        width: 50, 
-        height:50, 
     },
 
     rightButton: {
-        backgroundColor: colors.secondary,
         position: 'absolute',
         top: 50,
         right: 30,
-        width: 50, 
-        height:50, 
     }
 });
 
