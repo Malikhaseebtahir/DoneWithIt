@@ -1,6 +1,6 @@
 import React from 'react';
-import Practive from './app/Screens/practive';
+import WelcomeScreen from './app/Screens/WelcomeScreen';
 
 export default function App() {
-  return <Practive/>
+  return <WelcomeScreen/>
 }
