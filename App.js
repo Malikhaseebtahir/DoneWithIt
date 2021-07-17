@@ -1,16 +1,8 @@
 import React from 'react';
-import Icon from './app/components/Icon';
-
-import Screen from './app/components/Screen';
-import ListItem from './app/components/ListItem';
+import AccountScreen from './app/Screens/AccountScreen';
 
 export default function App() {
   return (
-    <Screen>
-      <ListItem
-        title='Title'
-        IconComponent={<Icon name='email'/>}
-      />
-    </Screen>
+    <AccountScreen/>
   );
 }
