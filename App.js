@@ -1,13 +1,12 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import SafeViewAndroid from "./app/common/GlobalStyles";
-
 import Icon from './app/components/Icon';
+
+import Screen from './app/components/Screen';
 
 export default function App() {
   return (
-  <SafeAreaView style={SafeViewAndroid.AndroidSafeArea}>
+  <Screen>
     <Icon name="email" size={50} backgroundColor='red' iconColor='blue'/>
-  </SafeAreaView>
+  </Screen>
   );
 }

@@ -5,6 +5,7 @@ import SafeViewAndroid from "../common/GlobalStyles";
 import ListItemSeperator from '../components/ListItemSeperator';
 import ListItem from './../components/ListItem';
 import ListItemActionDelete from './../components/ListItemDeleteAction';
+import Screen from './../components/Screen';
 
 const initialMessages = [
     {
@@ -38,7 +39,7 @@ function MessagesScreen(props) {
     }
 
     return(
-        <SafeAreaView style={SafeViewAndroid.AndroidSafeArea}>
+        <Screen>
             <FlatList
                 data={messages}
                 keyExtractor={message => message.id.toString()}
@@ -66,7 +67,7 @@ function MessagesScreen(props) {
                     ])
                 }}
             />
-        </SafeAreaView>
+        </Screen>
     );
 }
 
