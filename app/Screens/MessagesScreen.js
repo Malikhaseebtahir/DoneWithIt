@@ -32,7 +32,6 @@ function MessagesScreen(props) {
     const [refreshing, setRefreshing] = useState(false);
 
     const handleDelete = message => {
-        console.log('called');
         const newMessages = messages.filter(m => m.id !== message.id);
         setMessages(newMessages);
     }
